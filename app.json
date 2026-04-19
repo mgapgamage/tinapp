@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "PALPA Scanner",
+    "slug": "palpa-scanner",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#0f1f16"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.yourname.palpascanner",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Camera is needed to scan barcodes on Finnish beverage packages."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#1a7a4a"
+      },
+      "package": "com.yourname.palpascanner",
+      "permissions": ["CAMERA"]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow PALPA Scanner to use your camera to scan barcodes."
+        }
+      ]
+    ]
+  }
+}
